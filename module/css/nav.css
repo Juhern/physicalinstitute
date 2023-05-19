@@ -1,0 +1,275 @@
+/*menu*/
+#menu {
+    position: relative;
+    height: .4583rem;
+    background: #FFFFFF;
+    margin: 0 auto;
+}
+
+#menu_inner {
+    height: .4583rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*主菜单最外层容器*/
+#nav {
+    display: flex;
+    margin:0 5%;
+    width: 90%;
+    height: auto;
+    position:relative;
+    top: .1510rem;
+    z-index:152;
+    justify-content: space-between;
+}
+
+/*主菜单项目*/
+#nav .mainlevel {
+    float:left;
+    list-style:none;
+    /*flex布局*/
+    justify-content: space-between;
+}
+
+/*导航矩形*/
+.rectangle{
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 0.0313rem;
+    border-bottom: 0.0313rem solid #9A2F2F;
+    align-content: center;
+    top: 3%;
+}
+
+
+#nav .mainlevel a {
+    color: #353535;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size:.1563rem;/*一级菜单链接*/
+    line-height: .1875rem;
+    height: .1875rem;
+    display:block;
+    padding:0;
+    width:100%;
+    text-align:center;
+    margin:0;
+}
+
+/*鼠标经过主菜单*/
+#nav .mainlevel :hover{
+    display: block;
+    color: #F08421;
+}
+
+/*二级菜单*/
+.inferiorlevel {
+    display:block;
+    visibility: hidden;
+    opacity: 0;
+    background-color:#FFFFFF;
+    justify-content: space-between;
+    margin:0;
+    padding:0;
+    width: .9167rem;
+    border-radius: .0313rem;
+    position: relative;
+    transition:all 0.2s linear;
+    top:.2083rem;
+}
+
+/*mouseenter二级属性更改*/
+.show{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#nav .mainlevel li{
+    position: relative;
+    width:100%;
+    display: flex;
+    align-items: center;
+    list-style:none;
+    height:auto;
+    padding: 0;
+}
+
+/*导航三角形*/
+.triangle{
+    display: block;
+    content: "";
+    position: absolute;
+    top: -.1983rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: .1042rem transparent solid;
+    border-bottom: 0.1042rem #FFFFFF solid;
+}
+
+.navdot {
+    color: #6C6C6C;
+    font-size: .1354rem;
+    font-weight: normal; /*二级菜单链接*/
+    text-align: center;
+    width: 100%;
+    line-height: .3438rem;
+    height: .3438rem;
+    margin: 0;
+    background-image: none;
+    position: relative;
+}
+/*导航小圆点*/
+.navdot:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: .0417rem;
+    height: .0417rem;
+    background: #9A2F2F;
+    border-radius: 50%;
+    top: 45%;
+    transform: translateX(100%);
+}
+
+
+
+/*二级菜单连接*/
+#nav .mainlevel ul li a{
+    color: #6C6C6C;
+    font-size: .1354rem;
+    font-weight:normal; /*二级菜单链接*/
+    text-align:center;
+    width:100%;
+    line-height:.3438rem;
+    height:.3438rem;
+    margin:0;
+    background-image: none;
+    position: relative;
+}
+
+/*鼠标经过子菜单*/
+#nav .mainlevel ul li :hover{
+    background-image: none;
+    color: #9A2F2F;
+}
+
+
+/*三级菜单1*/
+.thirdlevel{
+    position: absolute;
+    content: "";
+    left: 112.5%;
+    top:-80%;
+    margin:0;
+    padding:0;
+    display: block;
+    background-color:#FFFFFF;
+    justify-content: space-between;
+    width: .9167rem;
+    border-radius: .0313rem;
+    transition:all 0.2s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*三级菜单2*/
+.thirdlevelspecial{
+    position: absolute;
+    content: "";
+    left: 110%;
+    top:-50%;
+    margin:0;
+    padding:0;
+    display: block;
+    background-color:#FFFFFF;
+    justify-content: space-between;
+    width: 1.1979rem;
+    border-radius: .0313rem;
+    transition:all 0.2s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*三级菜单3*/
+.thirdlevelspecial_copy{
+    position: absolute;
+    content: "";
+    left: 110%;
+    top:-50%;
+    margin:0;
+    padding:0;
+    display: block;
+    background-color:#FFFFFF;
+    justify-content: space-between;
+    width: .9896rem;
+    border-radius: .0313rem;
+    transition:all 0.2s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#nav .mainlevel ul li ul li{
+    color: #6C6C6C;
+    font-size: .1354rem;
+    font-weight:normal; /*三级菜单链接*/
+    text-align:center;
+    width:100%;
+    height:.3438rem;
+    line-height: .3438rem;
+    margin:0;
+    position: relative;
+}
+
+/*鼠标经过二级菜单*/
+#nav .mainlevel ul li ul li :hover{
+    background-image: none;
+    color: #9A2F2F;
+}
+
+
+/*侧边导航三角形1*/
+.triangleside{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: -.1983rem;
+    transform: rotate(0.75turn) ;
+    border: .1042rem transparent solid;
+    border-bottom: .1042rem #FFFFFF solid;
+}
+
+/*侧边导航三角形2*/
+.trianglesidespecial{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: -0.1983rem;
+    transform: rotate(0.75turn) ;
+    border: .1042rem transparent solid;
+    border-bottom: .1042rem #FFFFFF solid;
+}
+
+
+/*侧边导航三角形3*/
+.trianglesidespecial_copy{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: -0.1983rem;
+    transform: rotate(0.75turn) ;
+    border: .1042rem transparent solid;
+    border-bottom: .1042rem #FFFFFF solid;
+}
+
+
+/*mouseenter三级属性更改*/
+.imshow{
+    visibility: visible;
+    opacity: 1;
+}

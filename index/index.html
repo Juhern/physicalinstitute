@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"
+    />
+    <title>首页</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <script type="text/javascript" src="./js/carousel.js"></script>
+    <script type="text/javascript" src="./js/jquery-3.6.4.js"></script>
+  </head>
+  <body>
+    <div class="root">
+      <!--头部-->
+      <div class="header">
+        <img class="logo" src="./images/logo.png" alt="" srcset="" />
+        <img
+          class="left"
+          src="./images/导航栏左上角装饰.png"
+          alt=""
+          srcset=""
+        />
+        <img class="right" src="./images/运动员.png" alt="" srcset="" />
+        <form action="" method="post" id="index_search" name="index_search" onsubmit="return _nl_ys_check()" style="display: inline">
+          <input type="hidden" id="newssearchkey" name="newssearchkey" value="">
+          <input type="hidden" id="searchtype" name="searchtype" value="1">
+        <input class="search"  id="contentshow" type="text" placeholder="请输入关键字" />
+        <img
+          class="search_icon"
+          src="./images/search_icon.png"
+          alt="搜索按钮"
+          onclick="return _nl_ys_check()"
+        />
+        </form>
+      </div>
+      <!--导航栏-->
+      <div id="menu">
+        <div id="menu_inner">
+          <ul id="nav">
+            <li class="mainlevel">
+              <a href="index.html">首页</a>
+              <div class="rectangle"></div>
+            </li>
+            <li class="mainlevel"><a href="../module/index.html">学院概况</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">学院介绍</a></li>
+                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">现任领导</a></li>
+                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">行政机构</a></li>
+                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">历史沿革</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href="http://sports.hnu.edu.cn/szdw/zzjs.htm">师资队伍</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href=" ">教学队伍</a></li>
+                  <li><a href=" ">博硕导师</a></li>
+                  <li><a href=" ">教师风采</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href="">教育教学</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href=" ">课程建设</a></li>
+                  <li class="navdot"><a href=" ">教学管理</a>
+                    <div class="thirdlevelspecial">
+                      <div class="trianglesidespecial"></div>
+                      <ul>
+                        <li><a href=" ">院教学指导委员会</a></li>
+                        <li><a href=" ">教育教学组织机构</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href=" ">科教研改</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href="">校园体育</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href=" ">体育赛事</a></li>
+                  <li class="navdot"><a href=" ">体育代表队</a>
+                    <div class="thirdlevelspecial">
+                      <div class="trianglesidespecial"></div>
+                      <ul>
+                        <li><a href=" ">高水平体育代表队</a></li>
+                        <li><a href=" ">校园体育代表队</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href=" ">体育社团</a></li>
+                  <li class="navdot"><a href=" ">体育工作坊</a>
+                    <div class="thirdlevel">
+                      <div class="triangleside"></div>
+                      <ul>
+                        <li><a href=" ">工会动态</a></li>
+                        <li><a href=" ">工会组织</a></li>
+                        <li><a href=" ">财务公开</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href=" ">学术科研</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href=" ">学术动态</a></li>
+                  <li><a href=" ">学术成果</a></li>
+                  <li><a href=" ">学术机构</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href=" ">党群工作</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li class="navdot"><a href=" ">党建工作</a>
+                    <div class="thirdlevel">
+                      <div class="triangleside"></div>
+                      <ul>
+                        <li><a href=" ">党建动态</a></li>
+                        <li><a href=" ">组织架构</a></li>
+                        <li><a href=" ">党务公开</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="navdot"><a href=" ">工会工作</a>
+                    <div class="thirdlevel">
+                      <div class="triangleside"></div>
+                      <ul>
+                        <li><a href=" ">工会动态</a></li>
+                        <li><a href=" ">工会组织</a></li>
+                        <li><a href=" ">院务公开</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href=" ">学生工作</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href=" ">青春风采</a></li>
+                  <li><a href=" ">招生就业</a></li>
+                  <li><a href=" ">学生培养</a></li>
+                  <li><a href=" ">规章制度</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href=" ">场馆设施</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li class="navdot"><a href=" ">场馆介绍</a>
+                    <div class="thirdlevelspecial_copy">
+                      <div class="trianglesidespecial_copy"></div>
+                      <ul>
+                        <li><a href=" ">南校区体育馆</a></li>
+                        <li><a href=" ">财院校区体育馆</a></li>
+                        <li><a href=" ">游泳馆</a></li>
+                        <li><a href=" ">田径场</a></li>
+                        <li><a href=" ">篮球场</a></li>
+                        <li><a href=" ">健身房</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href=" ">工作人员</a></li>
+                  <li><a href=" ">管理制度</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href=" ">下载中心</a>
+            </li>
+          </UL>
+        </div>
+      </div>
+
+
+      <!--轮播图-->
+      <div id="carousel">
+        <div class="scroll">
+          <!--  图片展示-->
+          <img src="data/cover1.png" alt="scrollImage" class="img current">
+          <img src="data/cover2.png" alt="scrollImage" class="img">
+          <img src="data/cover3.png" alt="scrollImage" class="img">
+          <img src="data/cover4.png" alt="scrollImage" class="img">
+          <!-- 左右箭头的展示 -->
+          <div class="lf"></div>
+          <div class="lr"></div>
+
+          <!-- 小圆点展示 -->
+          <div class="dots">
+            <span class="square"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <!--快捷入口-->
+      <div class="quick">
+        <img class="book" src="./images/场馆预约.png" alt="" srcset="" />
+        <img class="test" src="./images/体质测试.png" alt="" srcset="" />
+      </div>
+      <!--新闻动态-->
+      <div class="new">
+        <div class="new_title">
+          <div class="rect"></div>
+          <span class="text">新闻动态</span>
+          <img class="image" src="./images/新闻动态图标.png" alt="" srcset="" />
+          <img src="./images/“更多”按钮.png" alt="" srcset="" class="more" />
+        </div>
+        <div class="new_content">
+          <div class="left">
+            <div class="date">
+              <div class="day">02</div>
+              <div class="year">2022.12</div>
+            </div>
+            <img
+              src="./data/IZ@PRF5R7NUHKL_G])O2NDR 3.png"
+              alt=""
+              srcset=""
+              class="image"
+            />
+            <div class="title">
+              中国共产党湖南大学体育学院第一次代表大会胜利召开
+            </div>
+          </div>
+          <div class="right">
+            <div class="item">
+              <div class="top">
+                <div class="title">
+                  体育学院四届五次教职工暨工会会员大会召开
+                </div>
+                <div class="date">[2022-12-15]</div>
+              </div>
+              <div class="mid">
+                12月20日上午，体育学院四届五次教职工大会暨四届五次工会会员大会在线上召开。会议听取了2022....
+              </div>
+              <div class="bottom"></div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <div class="title">
+                  中国共产党湖南大学体育学院第一次代表大会...
+                </div>
+                <div class="date">[2022-12-15]</div>
+              </div>
+              <div class="mid">
+                2022年12月13日上午，中国共产党湖南大学体育学院第一次代表大会在书院博物馆报告厅隆重召开....
+              </div>
+              <div class="bottom"></div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <div class="title">体育学院：开展消防安全培训演练活动</div>
+                <div class="date">[2022-12-15]</div>
+              </div>
+              <div class="mid">
+                2022年11月1日10点，体育学院第十次研究生代表大会在南校区游泳馆会议室顺利召开。出席本次会议....
+              </div>
+              <div class="bottom"></div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <div class="title">
+                  [体育院]体育学院“2022博士创新论坛“科研...
+                </div>
+                <div class="date">[2022-12-15]</div>
+              </div>
+              <div class="mid">
+                2022年11月15日，湖南大学”2022博士论坛“第48期在湖南大学游泳馆会议室顺利举行。主讲人以”经验....
+              </div>
+              <div class="bottom"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notice_educate">
+        <!--通知公告-->
+        <div class="notice">
+          <div class="notice_title">
+            <div class="rect"></div>
+            <span class="text">通知公告</span>
+            <img
+              class="image"
+              src="./images/通知公告图标.png"
+              alt=""
+              srcset=""
+            />
+            <img src="./images/“更多”按钮.png" alt="" srcset="" class="more" />
+          </div>
+          <div class="notice_content">
+            <div class="item">
+              <a href="" class="title">
+                2022年体育学院非教师系列专业技术职务评聘...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                2022年体育学院非教师系列专业技术职务评聘...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                2022年体育学院教学科研系列专业技术岗位职...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                2022年体育学院非教师系列专业技术职务评聘...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                体育学院关于湖南大学 2022 年“熊晓鸽奖教金”...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                体育学院关于湖南大学 2022 年“我心目中最敬...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                湖南大学体育学院2021-2022年度 优秀研究⽣...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="bottom"></div>
+          </div>
+        </div>
+        <!--教育教学-->
+        <div class="educate">
+          <div class="educate_title">
+            <div class="rect"></div>
+            <span class="text">教育教学</span>
+            <img
+              class="image"
+              src="./images/教育教学图标.png"
+              alt=""
+              srcset=""
+            />
+            <img src="./images/“更多”按钮.png" alt="" srcset="" class="more" />
+          </div>
+          <div class="educate_content">
+            <div class="item">
+              <a href="" class="title">
+                体育中心研究项目荣获湖南高等学校人文社会...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                2022年体育学院非教师系列专业技术职务评聘...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                2022年体育学院教学科研系列专业技术岗位职...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                2022年体育学院教学科研系列专业技术职务评...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                体育学院关于湖南大学 2022 年“熊晓鸽奖教金”...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                体育学院关于湖南大学 2022 年“我心目中最敬...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="item">
+              <a href="" class="title">
+                湖南大学体育学院2021-2022年度 优秀研究⽣...
+              </a>
+              <div class="date">2022-10-12</div>
+            </div>
+            <div class="bottom"></div>
+          </div>
+        </div>
+      </div>
+      <!--校园体育-->
+      <div class="physical">
+        <div class="physical_title">
+          <div class="rect"></div>
+          <span class="text">校园体育</span>
+          <img class="image" src="./images/校园体育图标.png" alt="" srcset="" />
+          <img src="./images/“更多”按钮.png" alt="" srcset="" class="more" />
+        </div>
+        <div class="physical_content">
+          <div class="bar">
+            <div id="physical_bar1" class="physical_bar item selected">
+              体育赛事
+            </div>
+            <div id="physical_bar2" class="physical_bar item">体育运动队</div>
+            <div id="physical_bar3" class="physical_bar item">体育社团</div>
+            <div id="physical_bar4" class="physical_bar item">体育工作坊</div>
+            <div id="physical_bar5" class="physical_bar item">体育视频</div>
+          </div>
+          <div id="physical_bar1_list" class="physical_bar_list list">
+            <div class="item">
+              <img
+                src="./data/校园体育 (4).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text"
+                >赛讯|湖南大学2022年研究生师生篮球赛开始啦！</a
+              >
+              <div class="date">2022-10-19</div>
+            </div>
+            <div class="item">
+              <img
+                src="./data/校园体育 (3).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text"
+                >赛讯|湖南大学2022年新生杯男子足球比赛竞赛规程</a
+              >
+              <div class="date">2022-10-19</div>
+            </div>
+            <div class="item">
+              <img
+                src="./data/校园体育 (1).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text"
+                >赛讯|湖南大学2022年新生羽毛球赛竞赛规程</a
+              >
+              <div class="date">2022-10-19</div>
+            </div>
+            <div class="item">
+              <img
+                src="./data/校园体育 (2).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text"
+                >赛讯|湖南大学2022年新生杯排球交流赛竞赛规程</a
+              >
+              <div class="date">2022-09-19</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--党群工作-->
+      <div class="party">
+        <div class="party_title">
+          <div class="rect"></div>
+          <span class="text">党群工作</span>
+          <img class="image" src="./images/党建工作图标.png" alt="" srcset="" />
+          <img src="./images/“更多”按钮.png" alt="" srcset="" class="more" />
+        </div>
+        <div class="party_content">
+          <div class="bar">
+            <div id="party_bar1" class="party_bar item selected">党建动态</div>
+            <div id="party_bar2" class="party_bar item">组织架构</div>
+            <div id="party_bar3" class="party_bar item">党务公开</div>
+            <div id="party_bar4" class="party_bar item">工会动态</div>
+            <div id="party_bar5" class="party_bar item">工会组织</div>
+          </div>
+          <div id="party_bar1_list" class="party_bar_list list">
+            <div class="item">
+              <div class="date">
+                <div class="day">02</div>
+                <div class="year">2022.12</div>
+              </div>
+              <img
+                src="./data/党群工作 (1).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text">体育学院召开发展党员大会</a>
+            </div>
+            <div class="item">
+              <div class="date">
+                <div class="day">02</div>
+                <div class="year">2022.12</div>
+              </div>
+              <img
+                src="./data/党群工作 (3).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text"
+                >体育学院党支部组织开展学习贯彻党的二十大精神系列活动</a
+              >
+            </div>
+            <div class="item">
+              <img
+                src="./data/党群工作 (2).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text"
+                >体育学院举办“学习贯彻习近平总书记“7·26”讲话精神”</a
+              >
+            </div>
+          </div>
+          <div id="party_bar2_list" class="party_bar_list list">
+            <div class="item">
+              <div class="date">
+                <div class="day">02</div>
+                <div class="year">2022.12</div>
+              </div>
+              <img
+                src="./data/党群工作 (1).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text">体育学院召开发展党员大会</a>
+            </div>
+            <div class="item">
+              <div class="date">
+                <div class="day">02</div>
+                <div class="year">2022.12</div>
+              </div>
+              <img
+                src="./data/党群工作 (3).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text"
+                >体育学院党支部组织开展学习贯彻党的二十大精神系列活动</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--学生风采-->
+      <div class="student">
+        <div class="student_title">
+          <div class="rect"></div>
+          <span class="text">学生风采</span>
+          <img class="image" src="./images/学生风采图标.png" alt="" srcset="" />
+          <img src="./images/“更多”按钮.png" alt="" srcset="" class="more" />
+        </div>
+        <div class="student_content">
+          <div id="physical_list" class="list">
+            <div class="item">
+              <img
+                src="./data/学生风采 (1).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text"
+                >“盘不落地，永不放弃”— 极限飞盘新生杯圆......</a
+              >
+              <div class="date">2022-10-19</div>
+            </div>
+            <div class="item">
+              <img
+                src="./data/学生风采 (4).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text"
+                >赛讯|湖南大学2022年新生杯男子排球比赛.......</a
+              >
+              <div class="date">2022-10-19</div>
+            </div>
+            <div class="item">
+              <img
+                src="./data/学生风采 (3).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text"
+                >赛讯|湖南大学2022年新生杯男子网球比赛.......</a
+              >
+              <div class="date">2022-10-19</div>
+            </div>
+            <div class="item">
+              <img
+                src="./data/学生风采 (2).png"
+                alt=""
+                srcset=""
+                class="thum"
+              />
+              <a href="" class="text"
+                >赛讯|湖南大学2022年新生杯男子蓝球比赛.......</a
+              >
+              <div class="date">2022-10-19</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <img
+          src="./images/底部-湖南大学校徽.png"
+          alt=""
+          srcset=""
+          class="logo"
+        />
+        <div class="friend">
+          <span class="title">友情链接：</span>
+          <a href="" class="link">湖南大学</a>&nbsp;/&nbsp;
+          <a href="" class="link">湖南体育局</a>&nbsp;/&nbsp;
+          <a href="" class="link">联系我们</a>
+        </div>
+        <div class="place">
+          通讯地址：湖南长沙岳麓山 邮编：410082 联系电话：0731-88822463
+        </div>
+        <div class="copyright">湖南大学体育学院版权所有</div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        {
+          // 处理校园体育
+          $(".physical_bar").hover(
+            function () {
+              $(".physical_bar").removeClass("selected");
+              $(this).addClass("selected");
+              let id = $(this).attr("id");
+              $(".physical_bar_list").hide();
+              $("#" + id + "_list").show();
+            },
+            function () {}
+          );
+        }
+        {
+          // 处理党群工作
+          $(".party_bar").hover(
+            function () {
+              $(".party_bar").removeClass("selected");
+              $(this).addClass("selected");
+              let id = $(this).attr("id");
+              $(".party_bar_list").hide();
+              $("#" + id + "_list").show();
+            },
+            function () {}
+          );
+        }
+      });
+      $(document).ready(function () {
+        let mainlevela = $('#nav .mainlevel a');
+        let mainlevel = $('#nav .mainlevel')
+        let navdot = $('.navdot');
+
+        // <!--下拉菜单开始-->
+        mainlevela.mouseenter(function(event) {
+          let target = $(event.target);
+          if(target.is('a')&& target.parents('.mainlevel').length > 0){
+          target.siblings('.inferiorlevel').addClass('show hover');
+          }
+        });
+        mainlevel.mouseleave(function(event) {
+          let target = $(event.target);
+          if (!target.is('.mainlevel')) {
+            target = target.parents('.mainlevel');
+          }
+          target.find('.inferiorlevel').removeClass('show hover');
+        });
+        <!--侧拉菜单开始-->
+        navdot.mouseenter(function(){
+          $(this).find('.thirdlevel , .thirdlevelspecial , .thirdlevelspecial_copy').addClass("imshow");
+          $(this).addClass('hover');
+        });
+        navdot.mouseleave(function(){
+          $(this).find(".thirdlevel , .thirdlevelspecial , .thirdlevelspecial_copy").removeClass("imshow");
+          $(this).removeClass('hover');
+        });
+      })
+      function _nl_ys_check() {
+        var keyword = document.getElementById('contentshow').value;
+        if(keyword==null||keyword==""){
+          alert("请输入你要检索的内容！");
+          return false;
+        }
+        if(window.toFF === 1)
+        {
+          document.getElementById("newssearchkey").value = Simplized(keyword );
+        }else
+        {
+          document.getElementById("newssearchkey").value = keyword;
+        }
+        const base64 = new Base64();
+        document.getElementById("newssearchkey").value = base64.encode(document.getElementById("newssearchkey").value);
+        new VsbFormFunc().disableAutoEnable(document.getElementById("contentshow"));
+        return true;
+      };
+    </script>
+  </body>
+</html>

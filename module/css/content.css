@@ -1,0 +1,163 @@
+/* 主体页面 */
+#content{
+    position: relative;
+    min-height: 4rem;
+    background-color: #FFFFFF;
+    display: flex;
+}
+
+#content .content-inner{
+    height: auto;
+}
+
+#content .side-nav{
+    box-sizing: border-box;
+    position: absolute;
+    width: 2.0572917rem;
+    height: 2.8489583rem;
+    left: 0.703125rem;
+    top: 0.55729rem;
+    background: #FAFAFA;
+    border: 0.015625rem solid #9F6565;
+    border-radius: 0.114583rem;
+    background: url("../images/hnulogo.png") no-repeat center;
+    background-position: center 0.777rem;
+    background-size: 1.92rem 1.724rem;
+}
+
+
+#content .side-nav .side-title{
+    position: absolute;
+    width: 0.875rem;
+    height: 0.265625rem;
+    left: 0.5885417rem;
+    top: 0.114583rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.21875rem;
+    line-height: 0.265625rem;
+    color: #9A2F2F;
+}
+
+#content .side-nav .side-line{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.4947917rem;
+    opacity: 1; /* 设置元素本身的透明度，包括元素内容和背景 */
+    border-bottom: 0.015625rem solid #9F6565; /* 设置底部边框 */
+}
+
+#content .side-nav .side-block{
+    box-sizing: border-box;
+    position: relative;
+    width: 1.3697917rem;
+    height: 0.33854167rem;
+    background: #FAFAFA;
+    justify-content: center;
+    border: 0.0104167rem solid #9A2F2F;
+    border-radius: 0.16927083rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#content .side-nav .side-block a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-40%);
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.177083rem;
+    line-height: 0.2135417rem;
+    color: #958F8F;
+    text-decoration: none;
+}
+#intro{
+    top: 0.96rem;
+}
+
+#leadership{
+    top: 1.06rem;
+}
+
+#structure{
+    top: 1.16rem;
+}
+
+#history{
+    top: 1.26rem;
+}
+
+
+
+#content .body-page{
+    height: auto;
+}
+
+#content .body-page .body-title{
+    position: absolute;
+    width: 0.8489583rem;
+    height: 0.25rem;
+    left: 3.2239583rem;
+    top: 0.55729rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.20833rem;
+    line-height: 0.25rem;
+    color: #9A2F2F;
+}
+
+#content .body-page .body-line{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 3.15625rem;
+    width: 6.40625rem;
+    height: 0;
+    top: 0.9rem;
+    border: 0.02rem solid #9C2E2E;
+    border-radius: 0.03rem;
+    background-color: #9C2E2E;
+}
+
+#content .body-page .body-content{
+    position: absolute;
+    width: auto;
+    left: 3.15625rem;
+    top: 1rem;
+    padding-bottom: 0.2rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.15625rem;
+    line-height: 0.25rem;
+
+    color: #383737;
+}
+
+#content .body-page .body-content .p-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.2rem;
+    line-height: 0.24rem;
+    /* identical to box height */
+    text-align: center;
+
+    color: #1F1F1F;
+}
+
+#content .body-page .body-content p{
+    text-indent: 2em;
+}
