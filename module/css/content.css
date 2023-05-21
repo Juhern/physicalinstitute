@@ -154,10 +154,12 @@
     line-height: 0.24rem;
     /* identical to box height */
     text-align: center;
+    margin-bottom: 0.3rem;
 
     color: #1F1F1F;
 }
 
 #content .body-page .body-content p{
     text-indent: 2em;
+    margin-bottom: 0.1rem;
 }
