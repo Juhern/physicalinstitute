@@ -43,7 +43,7 @@
         <div id="menu_inner">
           <ul id="nav">
             <li class="mainlevel">
-              <a href="index.html">首页</a>
+              <a href="../index/index.html">首页</a>
               <div class="rectangle"></div>
             </li>
             <li class="mainlevel"><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">学院概况</a>
@@ -322,7 +322,7 @@
         let inner2 = document.querySelector(".body-line");
         let inner3 = document.querySelector(".body-content");
         let remRatio = parseFloat(getComputedStyle(document.documentElement).fontSize);
-        content.style.height = (inner1.scrollHeight + inner2.scrollHeight + inner3.scrollHeight) / remRatio + 0.6 + "rem"; // 获取子元素高度并设置给父元素// 获取文本内容
+        content.style.height = (inner1.scrollHeight + inner2.scrollHeight + inner3.scrollHeight) / remRatio + 1 + "rem"; // 获取子元素高度并设置给父元素// 获取文本内容
         console.log(content.style.height);
         let textContent = document.querySelector('.text-content').textContent.replace(/\s/g,'');
         // 定义存储 side-block 对应的id和文字内容的对象
