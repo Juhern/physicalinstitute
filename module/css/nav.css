@@ -1,4 +1,4 @@
-/*menu*/
+/* menu */
 #menu {
     position: relative;
     height: .4583rem;
@@ -12,7 +12,7 @@
     margin-left: auto;
 }
 
-/*主菜单最外层容器*/
+/* 主菜单最外层容器 */
 #nav {
     display: flex;
     margin:0 5%;
@@ -24,7 +24,7 @@
     justify-content: space-between;
 }
 
-/*主菜单项目*/
+/* 主菜单项目 */
 #nav .mainlevel {
     float:left;
     list-style:none;
@@ -32,7 +32,7 @@
     justify-content: space-between;
 }
 
-/*导航矩形*/
+/* 导航矩形 */
 .rectangle{
     content: "";
     position: relative;
@@ -40,7 +40,6 @@
     height: 0.0313rem;
     border-bottom: 0.0313rem solid #9A2F2F;
     align-content: center;
-    top: 3%;
 }
 
 
@@ -58,13 +57,13 @@
     margin:0;
 }
 
-/*鼠标经过主菜单*/
+/* 鼠标经过主菜单 */
 #nav .mainlevel :hover{
     display: block;
     color: #F08421;
 }
 
-/*二级菜单*/
+/* 二级菜单 */
 .inferiorlevel {
     display:block;
     visibility: hidden;
@@ -80,7 +79,7 @@
     top:.2083rem;
 }
 
-/*mouseenter二级属性更改*/
+/* mouseenter二级属性更改 */
 .show{
     visibility: visible;
     opacity: 1;
@@ -97,7 +96,7 @@
     padding: 0;
 }
 
-/*导航三角形*/
+/* 导航三角形 */
 .triangle{
     display: block;
     content: "";
@@ -121,7 +120,7 @@
     background-image: none;
     position: relative;
 }
-/*导航小圆点*/
+/* 导航小圆点 */
 .navdot:before {
     content: '';
     display: block;
@@ -136,7 +135,7 @@
 
 
 
-/*二级菜单连接*/
+/* 二级菜单连接 */
 #nav .mainlevel ul li a{
     color: #6C6C6C;
     font-size: .1354rem;
@@ -150,18 +149,18 @@
     position: relative;
 }
 
-/*鼠标经过子菜单*/
+/* 鼠标经过子菜单 */
 #nav .mainlevel ul li :hover{
     background-image: none;
     color: #9A2F2F;
 }
 
 
-/*三级菜单1*/
+/* 三级菜单1 */
 .thirdlevel{
     position: absolute;
     content: "";
-    left: 112.5%;
+    left: 110%;
     top:-80%;
     margin:0;
     padding:0;
@@ -175,7 +174,7 @@
     opacity: 0;
 }
 
-/*三级菜单2*/
+/* 三级菜单2 */
 .thirdlevelspecial{
     position: absolute;
     content: "";
@@ -193,12 +192,30 @@
     opacity: 0;
 }
 
-/*三级菜单3*/
+/* 三级菜单3 */
 .thirdlevelspecial_copy{
     position: absolute;
     content: "";
     left: 110%;
-    top:-50%;
+    top:-35%;
+    margin:0;
+    padding:0;
+    display: block;
+    background-color:#FFFFFF;
+    justify-content: space-between;
+    width: 1.1rem;
+    border-radius: .0313rem;
+    transition:all 0.2s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* 三级菜单4 */
+.thirdlevelspecial_copy2{
+    position: absolute;
+    content: "";
+    left: 110%;
+    top:-20%;
     margin:0;
     padding:0;
     display: block;
@@ -210,6 +227,7 @@
     visibility: hidden;
     opacity: 0;
 }
+
 
 #nav .mainlevel ul li ul li{
     color: #6C6C6C;
