@@ -44,9 +44,9 @@
           <ul id="nav">
             <li class="mainlevel">
               <a href="../index/index.html">首页</a>
-              <div class="rectangle"></div>
             </li>
-            <li class="mainlevel"><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">学院概况</a>
+            <li class="mainlevel"><a href="../module/index.html">学院概况</a>
+              <div class="rectangle"></div>
               <div class="inferiorlevel">
                 <div class="triangle"></div>
                 <ul>
@@ -61,7 +61,17 @@
               <div class="inferiorlevel">
                 <div class="triangle"></div>
                 <ul>
-                  <li><a href=" ">教学队伍</a></li>
+                  <li class="navdot"><a href=" ">教学队伍</a>
+                    <div class="thirdlevelspecial_copy2">
+                      <div class="trianglesidespecial_copy"></div>
+                      <ul>
+                        <li><a href=" ">教授</a></li>
+                        <li><a href=" ">副教授(副高)</a></li>
+                        <li><a href=" ">助理教授(讲师)</a></li>
+                        <li><a href=" ">助理教师</a></li>
+                      </ul>
+                    </div>
+                  </li>
                   <li><a href=" ">博硕导师</a></li>
                   <li><a href=" ">教师风采</a></li>
                 </ul>
@@ -101,12 +111,11 @@
                   </li>
                   <li><a href=" ">体育社团</a></li>
                   <li class="navdot"><a href=" ">体育工作坊</a>
-                    <div class="thirdlevel">
-                      <div class="triangleside"></div>
+                    <div class="thirdlevelspecial_copy">
+                      <div class="trianglesidespecial"></div>
                       <ul>
-                        <li><a href=" ">工会动态</a></li>
-                        <li><a href=" ">工会组织</a></li>
-                        <li><a href=" ">财务公开</a></li>
+                        <li><a href=" ">工作坊动态</a></li>
+                        <li><a href=" ">工作坊介绍</a></li>
                       </ul>
                     </div>
                   </li>
@@ -157,6 +166,7 @@
                   <li><a href=" ">青春风采</a></li>
                   <li><a href=" ">招生就业</a></li>
                   <li><a href=" ">学生培养</a></li>
+                  <li><a href=" ">校友信息</a></li>
                   <li><a href=" ">规章制度</a></li>
                 </ul>
               </div>
@@ -169,12 +179,11 @@
                     <div class="thirdlevelspecial_copy">
                       <div class="trianglesidespecial_copy"></div>
                       <ul>
-                        <li><a href=" ">南校区体育馆</a></li>
-                        <li><a href=" ">财院校区体育馆</a></li>
-                        <li><a href=" ">游泳馆</a></li>
-                        <li><a href=" ">田径场</a></li>
-                        <li><a href=" ">篮球场</a></li>
-                        <li><a href=" ">健身房</a></li>
+                        <li><a href=" ">南校区体育场馆</a></li>
+                        <li><a href=" ">财院校区体育场馆</a></li>
+                        <li><a href=" ">湖南大学游泳馆</a></li>
+                        <li><a href=" ">湖南大学荫马塘</a></li>
+                        <li><a href=" ">运动场</a></li>
                       </ul>
                     </div>
                   </li>
@@ -289,11 +298,11 @@
         });
         <!--侧拉菜单开始-->
         navdot.mouseenter(function(){
-          $(this).find('.thirdlevel , .thirdlevelspecial , .thirdlevelspecial_copy').addClass("imshow");
+          $(this).find('.thirdlevel , .thirdlevelspecial , .thirdlevelspecial_copy , .thirdlevelspecial_copy2').addClass("imshow");
           $(this).addClass('hover');
         });
         navdot.mouseleave(function(){
-          $(this).find(".thirdlevel , .thirdlevelspecial , .thirdlevelspecial_copy").removeClass("imshow");
+          $(this).find(".thirdlevel , .thirdlevelspecial , .thirdlevelspecial_copy , .thirdlevelspecial_copy2").removeClass("imshow");
           $(this).removeClass('hover');
         });
       })
