@@ -15,10 +15,10 @@
 /* 主菜单最外层容器 */
 #nav {
     display: flex;
-    margin:0 5%;
+    margin:0 3%;
     width: 90%;
     height: auto;
-    position:relative;
+    position: relative;
     top: .1510rem;
     z-index:152;
     justify-content: space-between;

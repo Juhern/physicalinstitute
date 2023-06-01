@@ -146,20 +146,25 @@
     color: #383737;
 }
 
-#content .body-page .body-content .p-title{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.2rem;
-    line-height: 0.24rem;
-    /* identical to box height */
-    text-align: center;
-    margin-bottom: 0.3rem;
+#content .body-page .body-content .leader-block{
+    box-sizing: border-box;
+    position: relative;
+    width: 2.5364rem;
+    height: 1.1979rem;
 
-    color: #1F1F1F;
+    background: #F0E7DE;
+    border: 0.0052rem solid #D3C6B9;
+    border-radius: 0.0521rem;
+    margin: 0.417rem 0.171875rem;
 }
 
-#content .body-page .body-content p{
-    text-indent: 2em;
-    margin-bottom: 0.1rem;
+#content .body-page .body-content .leader-picture{
+    position: absolute;
+    width: 0.8177rem;
+    height: 1.1979rem;
+
+    background: url(../data/leader_1.png);
+    background-size: cover;
+    border-radius: 0.05208rem 0 0 0.05208rem;
 }
+
