@@ -72,3 +72,13 @@
     color: #FFFFFF;
 }
 
+#container .text-content .link{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.1875rem;
+    line-height: 0.229167rem;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+

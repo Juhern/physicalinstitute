@@ -36,7 +36,8 @@
 .rectangle{
     content: "";
     position: relative;
-    width: 100%;
+    width: 70%;
+    margin: 0 15% 0 15%;
     height: 0.0313rem;
     border-bottom: 0.0313rem solid #9A2F2F;
     align-content: center;
