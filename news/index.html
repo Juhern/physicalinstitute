@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"
+    />
+    <title>学院新闻</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/content.css">
+    <script type="text/javascript" src="./js/jquery-3.6.4.js"></script>
+  </head>
+  <body>
+    <div class="root">
+      <!--头部-->
+      <div class="header">
+        <a href="../index/index.html">
+          <img class="logo" src="./images/logo.png" alt="" srcset="" />
+        </a>
+        <img
+          class="left"
+          src="./images/导航栏左上角装饰.png"
+          alt=""
+          srcset=""
+        />
+        <img class="right" src="./images/运动员.png" alt="" srcset="" />
+        <form action="" method="post" id="index_search" name="index_search" onsubmit="return _nl_ys_check()" style="display: inline">
+          <input type="hidden" id="newssearchkey" name="newssearchkey" value="">
+          <input type="hidden" id="searchtype" name="searchtype" value="1">
+        <input class="search"  id="contentshow" type="text" placeholder="请输入关键字" />
+        <img
+          class="search_icon"
+          src="./images/search_icon.png"
+          alt="搜索按钮"
+          onclick="return _nl_ys_check()"
+        />
+        </form>
+      </div>
+      <!--导航栏-->
+      <div id="menu">
+        <div id="menu_inner">
+          <ul id="nav">
+            <li class="mainlevel"><a href="../module/index.html">学院概况</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href="../module/index.html">学院介绍</a></li>
+                  <li><a href="../module/leader.html">现任领导</a></li>
+                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">行政机构</a></li>
+                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">历史沿革</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href="index.html">学院新闻</a>
+              <div class="rectangle"></div>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">学院要闻</a></li>
+                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">通知公告</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href="http://sports.hnu.edu.cn/szdw/zzjs.htm">师资队伍</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li class="navdot"><a href=" ">教学队伍</a>
+                    <div class="thirdlevelspecial_copy2">
+                      <div class="trianglesidespecial_copy"></div>
+                      <ul>
+                        <li><a href=" ">教授</a></li>
+                        <li><a href=" ">副教授(副高)</a></li>
+                        <li><a href=" ">助理教授(讲师)</a></li>
+                        <li><a href=" ">助理教师</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href=" ">博硕导师</a></li>
+                  <li><a href=" ">教师风采</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href="">教育教学</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href=" ">课程建设</a></li>
+                  <li class="navdot"><a href=" ">教学管理</a>
+                    <div class="thirdlevelspecial">
+                      <div class="trianglesidespecial"></div>
+                      <ul>
+                        <li><a href=" ">院教学指导委员会</a></li>
+                        <li><a href=" ">教育教学组织机构</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href=" ">科教研改</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href="">校园体育</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href=" ">体育赛事</a></li>
+                  <li class="navdot"><a href=" ">体育代表队</a>
+                    <div class="thirdlevelspecial">
+                      <div class="trianglesidespecial"></div>
+                      <ul>
+                        <li><a href=" ">高水平体育代表队</a></li>
+                        <li><a href=" ">校园体育代表队</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href=" ">体育社团</a></li>
+                  <li class="navdot"><a href=" ">体育工作坊</a>
+                    <div class="thirdlevelspecial_copy">
+                      <div class="trianglesidespecial"></div>
+                      <ul>
+                        <li><a href=" ">工作坊动态</a></li>
+                        <li><a href=" ">工作坊介绍</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href=" ">学术科研</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href=" ">学术动态</a></li>
+                  <li><a href=" ">学术成果</a></li>
+                  <li><a href=" ">学术机构</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href=" ">党群工作</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li class="navdot"><a href=" ">党建工作</a>
+                    <div class="thirdlevel">
+                      <div class="triangleside"></div>
+                      <ul>
+                        <li><a href=" ">党建动态</a></li>
+                        <li><a href=" ">组织架构</a></li>
+                        <li><a href=" ">党务公开</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="navdot"><a href=" ">工会工作</a>
+                    <div class="thirdlevel">
+                      <div class="triangleside"></div>
+                      <ul>
+                        <li><a href=" ">工会动态</a></li>
+                        <li><a href=" ">工会组织</a></li>
+                        <li><a href=" ">院务公开</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href=" ">学生工作</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li><a href=" ">青春风采</a></li>
+                  <li><a href=" ">招生就业</a></li>
+                  <li><a href=" ">学生培养</a></li>
+                  <li><a href=" ">校友信息</a></li>
+                  <li><a href=" ">规章制度</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href=" ">场馆设施</a>
+              <div class="inferiorlevel">
+                <div class="triangle"></div>
+                <ul>
+                  <li class="navdot"><a href=" ">场馆介绍</a>
+                    <div class="thirdlevelspecial_copy">
+                      <div class="trianglesidespecial_copy"></div>
+                      <ul>
+                        <li><a href=" ">南校区体育场馆</a></li>
+                        <li><a href=" ">财院校区体育场馆</a></li>
+                        <li><a href=" ">湖南大学游泳馆</a></li>
+                        <li><a href=" ">湖南大学荫马塘</a></li>
+                        <li><a href=" ">运动场</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href=" ">工作人员</a></li>
+                  <li><a href=" ">管理制度</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mainlevel"><a href=" ">下载中心</a>
+              <div class="inferiorlevel"></div>
+            </li>
+          </UL>
+        </div>
+      </div>
+
+
+      <!-- 背景图 -->
+      <div id="container">
+          <!--  图片展示-->
+          <img src="images/background.png" alt="背景图" class="img">
+          <div class="block">
+             <div class="text-title">
+               <a href="../news/index.html">学院新闻</a>
+             </div>
+             <div class="text-line1"></div>
+             <div class="text-line2"></div>
+             <div class="text-content">
+               <a href="../index/index.html" class="link">首页</a>/
+               <a href="../news/index.html" class="link">学院新闻</a>/
+               <a href="../news/newspage.html" class="link">学院要闻</a>
+             </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- 主体内容 -->
+    <div id="content">
+      <div class="content-inner">
+        <div class="side-nav">
+          <div class="side-title">
+            学院新闻
+          </div>
+          <div class="side-line"></div>
+          <div class="side-block" id="news"><a id="news-a" href="../news/index.html">学院要闻</a></div>
+          <div class="side-block" id="document"><a id="document-a" href="../news/documentpage.html">通知公告</a></div>
+          </div>
+        </div>
+
+        <div class="body-page">
+          <div class="body-title">学院要闻</div>
+          <div class="body-line"></div>
+          <div class="body-content">
+            <p class="p-title">体育学院党建工作能力提升培训班第三场专题辅导报告举行</p>
+            <p>5月30日上午，学院基层党组织党建工作能力提升专题培训班在游泳馆会议室举行第三场讲座，体育学院院长王祚亮作“大兴调查研究之风，推动学校体育发展”主题报告。院党委书记田祖国及培训班全体学员等近30人参加培训，学院副院长吴江萍主持。</p>
+            <p><img src="data/1.png" alt=" " style="display: block; margin: 0 auto"></p>
+            <p>王祚亮从什么是调查研究、大兴调查研究的意义、我党大兴调查研究的优良传统、大兴调查研究的总体要求、大兴调查研究的主要内容、大兴调查研究的方法步骤、调查研究推动学校体育发展等七个方面做了详细的解说。</p>
+            <p>王祚亮表示，党员干部深入学习领会习近平总书记关于调查研究的重要论述，从政治和全局高度深刻认识调查研究的重要意义，切实增强思想自觉、政治自觉、行动自觉，以问题为导向，确保调查研究目的明确、方法得当、不走形式，让调查研究同业务工作和学校体育事业的发展紧密结合，针对学院行政管理、体育教学、学生工作、后勤保障等方面存在的问题，深入调查，通过调查研究来推动学校体育高质量发展。</p>
+            <p>王祚亮的讲座为学院党员干部深化对调查研究的认识、扎实推进学校体育事业的发展提供了重要启示。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="footer">
+        <img
+          src="./images/底部-湖南大学校徽.png"
+          alt=""
+          srcset=""
+          class="logo"
+        />
+        <div class="friend">
+          <span class="title">友情链接：</span>
+          <a href="" class="link">湖南大学</a>&nbsp;/&nbsp;
+          <a href="" class="link">湖南体育局</a>&nbsp;/&nbsp;
+          <a href="" class="link">联系我们</a>
+        </div>
+        <div class="place">
+          通讯地址：湖南长沙岳麓山 邮编：410082 联系电话：0731-88822463
+        </div>
+        <div class="copyright">湖南大学体育学院版权所有</div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        let mainlevela = $('#nav .mainlevel a');
+        let mainlevel = $('#nav .mainlevel')
+        let navdot = $('.navdot');
+
+        /* 下拉菜单开始 */
+        mainlevela.mouseenter(function(event) {
+          let target = $(event.target);
+          if(target.is('a')&& target.parents('.mainlevel').length > 0){
+          target.siblings('.inferiorlevel').addClass('show hover');
+          }
+        });
+        mainlevel.mouseleave(function(event) {
+          let target = $(event.target);
+          if (!target.is('.mainlevel')) {
+            target = target.parents('.mainlevel');
+          }
+          target.find('.inferiorlevel').removeClass('show hover');
+        });
+        <!--侧拉菜单开始-->
+        navdot.mouseenter(function(){
+          $(this).find('.thirdlevel , .thirdlevelspecial , .thirdlevelspecial_copy , .thirdlevelspecial_copy2').addClass("imshow");
+          $(this).addClass('hover');
+        });
+        navdot.mouseleave(function(){
+          $(this).find(".thirdlevel , .thirdlevelspecial , .thirdlevelspecial_copy , .thirdlevelspecial_copy2").removeClass("imshow");
+          $(this).removeClass('hover');
+        });
+      })
+      /* 搜索功能 */
+      function _nl_ys_check() {
+        var keyword = document.getElementById('contentshow').value;
+        if(keyword==null||keyword==""){
+          alert("请输入你要检索的内容！");
+          return false;
+        }
+        if(window.toFF === 1)
+        {
+          document.getElementById("newssearchkey").value = Simplized(keyword );
+        }else
+        {
+          document.getElementById("newssearchkey").value = keyword;
+        }
+        const base64 = new Base64();
+        document.getElementById("newssearchkey").value = base64.encode(document.getElementById("newssearchkey").value);
+        new VsbFormFunc().disableAutoEnable(document.getElementById("contentshow"));
+        return true;
+      };
+      window.onload = function(){
+        let content = document.getElementById("content");
+        let inner1 = document.querySelector(".body-title");
+        let inner2 = document.querySelector(".body-line");
+        let inner3 = document.querySelector(".body-content");
+        let remRatio = parseFloat(getComputedStyle(document.documentElement).fontSize);
+        content.style.height = (inner1.scrollHeight + inner2.scrollHeight + inner3.scrollHeight) / remRatio + 1 + "rem"; // 获取子元素高度并设置给父元素// 获取文本内容
+        console.log(content.style.height);
+        let textContent = document.querySelector('.text-content').textContent.replace(/\s/g,'');
+        // 定义存储 side-block 对应的id和文字内容的对象
+        const sideBlocks = {
+          news: '学院要闻',
+          document: '通知公告',
+        };
+        // 循环遍历对象，匹配文字内容并修改样式
+        for (const id in sideBlocks) {
+          if (textContent.includes(sideBlocks[id])) {
+            document.getElementById(id).style.backgroundColor = '#9A2F2F';
+            document.getElementById(id + '-a').style.color = '#FFFFFF';
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
