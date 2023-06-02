@@ -1,4 +1,4 @@
-/* 模块加载函数 */
+/* 新闻模块加载函数 */
 function loadNewsModule(filepath) {
     fetch(filepath)
         .then(response => response.text())
@@ -11,6 +11,7 @@ function loadNewsModule(filepath) {
         });
 }
 
+/* 通告模块加载函数 */
 function loadDocumentModule(filepath) {
     fetch(filepath)
         .then(response => response.text())
@@ -22,3 +23,4 @@ function loadDocumentModule(filepath) {
             }
         });
 }
+

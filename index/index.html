@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/carousel.css">
     <script type="text/javascript" src="./js/carousel.js"></script>
     <script type="text/javascript" src="./js/jquery-3.6.4.js"></script>
+    <script type="text/javascript" src="./js/customed-function.js"></script>
   </head>
   <body>
     <div class="root">
@@ -245,65 +246,73 @@
           <a href="../news/index.html"><img src="./images/“更多”按钮.png" alt="" srcset="" class="more" /></a>
         </div>
         <div class="new_content">
-          <div class="left">
-            <div class="date">
-              <div class="day">30</div>
-              <div class="year">2023.05</div>
-            </div>
-            <img
-              src="./data/news1.png"
-              alt=""
-              srcset=""
-              class="image"
-            />
-            <div class="title">
-              体育学院党建工作能力提升培训班第三场专题辅导报告举行
-            </div>
+          <div class="left" id="newsItem">
+              <div class="date">
+                <div class="day">01</div>
+                <div class="year">2023.06</div>
+              </div>
+                 <img
+                      src="data/news1.png"
+                      alt=""
+                      srcset=""
+                      class="image"
+                 />
+              <div class="title">
+                为学生办实事，体育学院组织召开课程建设工作学生座谈会
+              </div>
           </div>
+          <script>
+            // 获取新闻区域的父元素或其他适当的元素
+            const newsItem = document.getElementById('newsItem');
+            // 添加点击事件处理程序
+            newsItem.addEventListener('click', handleNewsItemClick('../news/newspage.html'));
+          </script>
           <div class="right">
             <div class="item">
               <div class="top">
                 <div class="title">
-                  体育学院四届五次教职工暨工会会员大会召开
+                  体育学院党建工作能力提升培训班第三场专题辅导报告举行
                 </div>
-                <div class="date">[2022-12-15]</div>
+                <div class="date">[2023-05-31]</div>
               </div>
               <div class="mid">
-                12月20日上午，体育学院四届五次教职工大会暨四届五次工会会员大会在线上召开。会议听取了2022....
+                5月30日上午，学院基层党组织党建工作能力提升专题培训班在游泳馆会议室举行第三场讲座，体育学院院长王祚亮作....
               </div>
               <div class="bottom"></div>
             </div>
             <div class="item">
               <div class="top">
                 <div class="title">
-                  中国共产党湖南大学体育学院第一次代表大会...
+                  我校跆拳道代表队在第十七届中国大学生跆拳道锦标赛斩获
                 </div>
-                <div class="date">[2022-12-15]</div>
+                <div class="date">[2023-05-30]</div>
               </div>
               <div class="mid">
-                2022年12月13日上午，中国共产党湖南大学体育学院第一次代表大会在书院博物馆报告厅隆重召开....
-              </div>
-              <div class="bottom"></div>
-            </div>
-            <div class="item">
-              <div class="top">
-                <div class="title">体育学院：开展消防安全培训演练活动</div>
-                <div class="date">[2022-12-15]</div>
-              </div>
-              <div class="mid">
-                2022年11月1日10点，体育学院第十次研究生代表大会在南校区游泳馆会议室顺利召开。出席本次会议....
+                5月24日至30日，第十七届中国大学生跆拳道锦标赛在张家界市第一中学顺利举行，我校跆拳道代表队在比赛中斩获3金1铜...
               </div>
               <div class="bottom"></div>
             </div>
             <div class="item">
               <div class="top">
                 <div class="title">
-                  [体育院]体育学院“2022博士创新论坛“科研...
+                  体育学院党建工作能力提升培训班第二场专题辅导报告举行
                 </div>
-                <div class="date">[2022-12-15]</div>
+                <div class="date">[2023-05-24]</div>
               </div>
               <div class="mid">
-                2022年11月15日，湖南大学”2022博士论坛“第48期在湖南大学游泳馆会议室顺利举行。主讲人以”经验....
+                5月23日上午，学院基层党组织党建工作能力提升培训班举行第二场专题辅导报告，校党委组织部副部长钟叶姣....
+              </div>
+              <div class="bottom"></div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <div class="title">
+                  体育学院基层党组织党建工作能力提升培训班开班
+                </div>
+                <div class="date">[2023-05-17]</div>
+              </div>
+              <div class="mid">
+                5月16日上午，体育学院基层党组织党建工作能力提升培训班在游泳馆报告厅开班，学院党委书记田祖国作首场专题报告....
               </div>
               <div class="bottom"></div>
             </div>
