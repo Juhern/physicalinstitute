@@ -5,3 +5,4 @@ function handleNewsItemClick(linkUrl) {
         window.location.href = linkUrl;
     };
 }
+

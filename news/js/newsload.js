@@ -8,6 +8,7 @@ function loadNewsModule(filepath) {
             for (let i = 0; i < newsModules.length; i++) {
                 newsModules[i].innerHTML = data;
             }
+            calculateContentHeight();
         });
 }
 
@@ -21,6 +22,9 @@ function loadDocumentModule(filepath) {
             for (let i = 0; i < newsModules.length; i++) {
                 newsModules[i].innerHTML = data;
             }
+            calculateContentHeight();
         });
 }
+
+
 

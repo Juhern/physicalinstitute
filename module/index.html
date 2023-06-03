@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/container.css">
     <link rel="stylesheet" href="css/content.css">
     <script type="text/javascript" src="./js/jquery-3.6.4.js"></script>
+    <script type="text/javascript" src="./js/stylefunc.js"></script>
   </head>
   <body>
     <div class="root">
@@ -239,8 +240,8 @@
           <div class="side-block" id="leadership"><a id="leadership-a" href="../module/leader.html">现任领导</a></div>
           <div class="side-block" id="structure"><a id="structure-a"href=" ">组织机构</a></div>
           <div class="side-block" id="history"><a id="history-a" href=" ">历史沿革</a></div>
-          </div>
         </div>
+      </div>
 
         <div class="body-page">
           <div class="body-title">学院介绍</div>
@@ -267,6 +268,9 @@
         </div>
       </div>
     </div>
+    <script>
+      calculateContentHeight();
+    </script>
 
       <div class="footer">
         <img
@@ -317,33 +321,8 @@
           $(this).removeClass('hover');
         });
       })
-      /* 搜索功能 */
-      function _nl_ys_check() {
-        var keyword = document.getElementById('contentshow').value;
-        if(keyword==null||keyword==""){
-          alert("请输入你要检索的内容！");
-          return false;
-        }
-        if(window.toFF === 1)
-        {
-          document.getElementById("newssearchkey").value = Simplized(keyword );
-        }else
-        {
-          document.getElementById("newssearchkey").value = keyword;
-        }
-        const base64 = new Base64();
-        document.getElementById("newssearchkey").value = base64.encode(document.getElementById("newssearchkey").value);
-        new VsbFormFunc().disableAutoEnable(document.getElementById("contentshow"));
-        return true;
-      };
+
       window.onload = function(){
-        let content = document.getElementById("content");
-        let inner1 = document.querySelector(".body-title");
-        let inner2 = document.querySelector(".body-line");
-        let inner3 = document.querySelector(".body-content");
-        let remRatio = parseFloat(getComputedStyle(document.documentElement).fontSize);
-        content.style.height = (inner1.scrollHeight + inner2.scrollHeight + inner3.scrollHeight) / remRatio + 1 + "rem"; // 获取子元素高度并设置给父元素// 获取文本内容
-        console.log(content.style.height);
         let textContent = document.querySelector('.text-content').textContent.replace(/\s/g,'');
         // 定义存储 side-block 对应的id和文字内容的对象
         const sideBlocks = {
@@ -359,7 +338,6 @@
             document.getElementById(id + '-a').style.color = '#FFFFFF';
           }
         }
-
       };
     </script>
   </body>
