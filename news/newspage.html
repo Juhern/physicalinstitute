@@ -8,208 +8,18 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"
     />
     <title>学院要闻</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="css/container.css">
     <link rel="stylesheet" href="css/content.css">
-    <script type="text/javascript" src="./js/jquery-3.6.4.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.6.4.js"></script>
     <script type="text/javascript" src="./js/newsload.js"></script>
-    <script type="text/javascript" src="./js/stylefunc.js"></script>
+    <script type="text/javascript" src="../js/stylefunc.js"></script>
   </head>
   <body>
     <div class="root">
-      <!--头部-->
-      <div class="header">
-        <a href="../index/index.html">
-          <img class="logo" src="./images/logo.png" alt="" srcset="" />
-        </a>
-        <img
-          class="left"
-          src="./images/导航栏左上角装饰.png"
-          alt=""
-          srcset=""
-        />
-        <img class="right" src="./images/运动员.png" alt="" srcset="" />
-        <form action="" method="post" id="index_search" name="index_search" onsubmit="return _nl_ys_check()" style="display: inline">
-          <input type="hidden" id="newssearchkey" name="newssearchkey" value="">
-          <input type="hidden" id="searchtype" name="searchtype" value="1">
-        <input class="search"  id="contentshow" type="text" placeholder="请输入关键字" />
-        <img
-          class="search_icon"
-          src="./images/search_icon.png"
-          alt="搜索按钮"
-          onclick="return _nl_ys_check()"
-        />
-        </form>
-      </div>
-      <!--导航栏-->
-      <div id="menu">
-        <div id="menu_inner">
-          <ul id="nav">
-            <li class="mainlevel"><a href="../module/index.html">学院概况</a>
-              <div class="inferiorlevel">
-                <div class="triangle"></div>
-                <ul>
-                  <li><a href="../module/index.html">学院介绍</a></li>
-                  <li><a href="../module/leader.html">现任领导</a></li>
-                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">行政机构</a></li>
-                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">历史沿革</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mainlevel"><a href="index.html">学院新闻</a>
-              <div class="rectangle"></div>
-              <div class="inferiorlevel">
-                <div class="triangle"></div>
-                <ul>
-                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">学院要闻</a></li>
-                  <li><a href="http://sports.hnu.edu.cn/xygk/jbqk.htm">通知公告</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mainlevel"><a href="http://sports.hnu.edu.cn/szdw/zzjs.htm">师资队伍</a>
-              <div class="inferiorlevel">
-                <div class="triangle"></div>
-                <ul>
-                  <li class="navdot"><a href=" ">教学队伍</a>
-                    <div class="thirdlevelspecial_copy2">
-                      <div class="trianglesidespecial_copy"></div>
-                      <ul>
-                        <li><a href=" ">教授</a></li>
-                        <li><a href=" ">副教授(副高)</a></li>
-                        <li><a href=" ">助理教授(讲师)</a></li>
-                        <li><a href=" ">助理教师</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a href=" ">博硕导师</a></li>
-                  <li><a href=" ">教师风采</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mainlevel"><a href="">教育教学</a>
-              <div class="inferiorlevel">
-                <div class="triangle"></div>
-                <ul>
-                  <li><a href=" ">课程建设</a></li>
-                  <li class="navdot"><a href=" ">教学管理</a>
-                    <div class="thirdlevelspecial">
-                      <div class="trianglesidespecial"></div>
-                      <ul>
-                        <li><a href=" ">院教学指导委员会</a></li>
-                        <li><a href=" ">教育教学组织机构</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a href=" ">科教研改</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mainlevel"><a href="">校园体育</a>
-              <div class="inferiorlevel">
-                <div class="triangle"></div>
-                <ul>
-                  <li><a href=" ">体育赛事</a></li>
-                  <li class="navdot"><a href=" ">体育代表队</a>
-                    <div class="thirdlevelspecial">
-                      <div class="trianglesidespecial"></div>
-                      <ul>
-                        <li><a href=" ">高水平体育代表队</a></li>
-                        <li><a href=" ">校园体育代表队</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a href=" ">体育社团</a></li>
-                  <li class="navdot"><a href=" ">体育工作坊</a>
-                    <div class="thirdlevelspecial_copy">
-                      <div class="trianglesidespecial"></div>
-                      <ul>
-                        <li><a href=" ">工作坊动态</a></li>
-                        <li><a href=" ">工作坊介绍</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="mainlevel"><a href=" ">学术科研</a>
-              <div class="inferiorlevel">
-                <div class="triangle"></div>
-                <ul>
-                  <li><a href=" ">学术动态</a></li>
-                  <li><a href=" ">学术成果</a></li>
-                  <li><a href=" ">学术机构</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mainlevel"><a href=" ">党群工作</a>
-              <div class="inferiorlevel">
-                <div class="triangle"></div>
-                <ul>
-                  <li class="navdot"><a href=" ">党建工作</a>
-                    <div class="thirdlevel">
-                      <div class="triangleside"></div>
-                      <ul>
-                        <li><a href=" ">党建动态</a></li>
-                        <li><a href=" ">组织架构</a></li>
-                        <li><a href=" ">党务公开</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="navdot"><a href=" ">工会工作</a>
-                    <div class="thirdlevel">
-                      <div class="triangleside"></div>
-                      <ul>
-                        <li><a href=" ">工会动态</a></li>
-                        <li><a href=" ">工会组织</a></li>
-                        <li><a href=" ">院务公开</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="mainlevel"><a href=" ">学生工作</a>
-              <div class="inferiorlevel">
-                <div class="triangle"></div>
-                <ul>
-                  <li><a href=" ">青春风采</a></li>
-                  <li><a href=" ">招生就业</a></li>
-                  <li><a href=" ">学生培养</a></li>
-                  <li><a href=" ">校友信息</a></li>
-                  <li><a href=" ">规章制度</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mainlevel"><a href=" ">场馆设施</a>
-              <div class="inferiorlevel">
-                <div class="triangle"></div>
-                <ul>
-                  <li class="navdot"><a href=" ">场馆介绍</a>
-                    <div class="thirdlevelspecial_copy">
-                      <div class="trianglesidespecial_copy"></div>
-                      <ul>
-                        <li><a href=" ">南校区体育场馆</a></li>
-                        <li><a href=" ">财院校区体育场馆</a></li>
-                        <li><a href=" ">湖南大学游泳馆</a></li>
-                        <li><a href=" ">湖南大学荫马塘</a></li>
-                        <li><a href=" ">运动场</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a href=" ">工作人员</a></li>
-                  <li><a href=" ">管理制度</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mainlevel"><a href=" ">下载中心</a>
-              <div class="inferiorlevel"></div>
-            </li>
-          </UL>
-        </div>
-      </div>
-
-
+      <header></header>
+      <nav></nav>
       <!-- 背景图 -->
       <div id="container">
           <!--  图片展示-->
@@ -254,57 +64,20 @@
         </div>
       </div>
     </div>
-
-      <div class="footer">
-        <img
-          src="./images/底部-湖南大学校徽.png"
-          alt=""
-          srcset=""
-          class="logo"
-        />
-        <div class="friend">
-          <span class="title">友情链接：</span>
-          <a href="" class="link">湖南大学</a>&nbsp;/&nbsp;
-          <a href="" class="link">湖南体育局</a>&nbsp;/&nbsp;
-          <a href="" class="link">联系我们</a>
-        </div>
-        <div class="place">
-          通讯地址：湖南长沙岳麓山 邮编：410082 联系电话：0731-88822463
-        </div>
-        <div class="copyright">湖南大学体育学院版权所有</div>
-      </div>
+       <footer></footer>
     </div>
     <script>
-      $(document).ready(function () {
-        let mainlevela = $('#nav .mainlevel a');
-        let mainlevel = $('#nav .mainlevel')
-        let navdot = $('.navdot');
-
-        /* 下拉菜单开始 */
-        mainlevela.mouseenter(function(event) {
-          let target = $(event.target);
-          if(target.is('a')&& target.parents('.mainlevel').length > 0){
-          target.siblings('.inferiorlevel').addClass('show hover');
-          }
-        });
-        mainlevel.mouseleave(function(event) {
-          let target = $(event.target);
-          if (!target.is('.mainlevel')) {
-            target = target.parents('.mainlevel');
-          }
-          target.find('.inferiorlevel').removeClass('show hover');
-        });
-        <!--侧拉菜单开始-->
-        navdot.mouseenter(function(){
-          $(this).find('.thirdlevel , .thirdlevelspecial , .thirdlevelspecial_copy , .thirdlevelspecial_copy2').addClass("imshow");
-          $(this).addClass('hover');
-        });
-        navdot.mouseleave(function(){
-          $(this).find(".thirdlevel , .thirdlevelspecial , .thirdlevelspecial_copy , .thirdlevelspecial_copy2").removeClass("imshow");
-          $(this).removeClass('hover');
-        });
-      })
-
+      async function fetchAndInsertContent(selector, url) {
+        const response = await fetch(url);
+        const content = await response.text();
+        document.querySelector(selector).innerHTML = content;
+      }
+      (async function() {
+        await fetchAndInsertContent('header', '../header.html');
+        await fetchAndInsertContent('nav', '../nav.html');
+        await fetchAndInsertContent('footer','../footer.html');
+        navfunction();
+      })();
       window.onload = function(){
         calculateContentHeight();
         let textContent = document.querySelector('.text-content').textContent.replace(/\s/g,'');
