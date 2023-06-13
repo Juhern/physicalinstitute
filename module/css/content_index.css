@@ -1,0 +1,33 @@
+#content .body-page .body-content{
+    position: absolute;
+    width: 5.64rem;
+    left: 3.15625rem;
+    top: 1rem;
+    padding-bottom: 0.2rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.15625rem;
+    line-height: 0.25rem;
+
+    color: #383737;
+}
+
+#content .body-page .body-content .p-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.2rem;
+    line-height: 0.24rem;
+    /* identical to box height */
+    text-align: center;
+    margin-bottom: 0.3rem;
+
+    color: #1F1F1F;
+}
+
+#content .body-page .body-content p{
+    text-indent: 2em;
+    margin-bottom: 0.1rem;
+}

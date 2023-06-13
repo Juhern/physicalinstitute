@@ -1,10 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:background="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"
+    />
+    <title>历史沿革</title>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/content_leader.css">
+    <script type="text/javascript" src="../js/jquery-3.6.4.js"></script>
+    <script type="text/javascript" src="../js/stylefunc.js"></script>
 </head>
 <body>
+<div class="root">
+    <header></header>
+    <nav></nav>
+    <!-- 背景图 -->
+    <div id="container">
+        <!--  图片展示-->
+        <img src="../images/background.png" alt="背景图" class="img">
+        <div class="block">
+            <div class="text-title">
+                学院概况
+            </div>
+            <div class="text-line1"></div>
+            <div class="text-line2"></div>
+            <div class="text-content">
+                <a href="../index/index.html" class="link">首页</a>/
+                <a href="../module/index.html" class="link">学院概况</a>/
+                <a href="../module/leader.html" class="link">历史沿革</a>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- 主体内容 -->
+<div id="content">
+    <div class="content-inner">
+        <div class="side-nav">
+            <div class="side-title">
+                学院概况
+            </div>
+            <div class="side-line"></div>
+            <div class="side-block" id="intro"><a id="intro-a" href="../module/index.html">学院介绍</a></div>
+            <div class="side-block" id="leadership"><a id="leadership-a" href="../module/leader.html">现任领导</a></div>
+            <div class="side-block" id="structure"><a id="structure-a" href="../module/institute.html">组织机构</a></div>
+            <div class="side-block" id="history"><a id="history-a" href="../module/history.html">历史沿革</a></div>
+        </div>
+    </div>
+
+    <div class="body-page">
+        <div class="body-title">历史沿革</div>
+        <div class="body-line"></div>
+        <div class="body-content">
+            <div class="leader-block">
+                <div class="leader-picture" style="background-image: url('data/leader_1.png')"></div>
+                <div class="leader-intro">
+                    <div class="leader-title">王祚亮</div>
+                    <div class="leader-description">
+                        <p><strong>职务：</strong>院长</p>
+                        <p>主持学院行政全面工作。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leader-block">
+                <div class="leader-picture" style="background-image: url('data/leader_2.png')"></div>
+                <div class="leader-intro">
+                    <div class="leader-title">田祖国</div>
+                    <div class="leader-description">
+                        <p><strong>职务：</strong>党委书记</p>
+                        <p>主持学院党委全面工作。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leader-block">
+                <div class="leader-picture" style="background-image: url('data/leader_3.png')"></div>
+                <div class="leader-intro">
+                    <div class="leader-title">李小龙</div>
+                    <div class="leader-description">
+                        <p><strong>职务：</strong>党委副书记、纪委书记、工会主席</p>
+                        <p><strong>分管：</strong>学生思政，工会，离退休，校友等工作，协管党建和群体工作</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leader-block">
+                <div class="leader-picture" style="background-image: url('data/leader_4.png')"></div>
+                <div class="leader-intro">
+                    <div class="leader-title">吴江萍</div>
+                    <div class="leader-description">
+                        <p><strong>职务：</strong>副院长</p>
+                        <p><strong>分管：</strong>教学、财务和资产等工作。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leader-block">
+                <div class="leader-picture" style="background-image: url('data/leader_5.png')"></div>
+                <div class="leader-intro">
+                    <div class="leader-title">戴兴鸿</div>
+                    <div class="leader-description">
+                        <p><strong>职务：</strong>副院长</p>
+                        <p><strong>分管：</strong>研究生培养、科研（教学研究）、群体工作和对外交流。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leader-block">
+                <div class="leader-picture" style="background-image: url('data/leader_6.png')"></div>
+                <div class="leader-intro">
+                    <div class="leader-title">刘庭白</div>
+                    <div class="leader-description">
+                        <p><strong>职务：</strong>副处级组织员</p>
+                        <p><strong>分管：</strong>宣传，协助党建党务相关工作。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leader-block">
+                <div class="leader-picture" style="background-image: url('data/leader_7.png')"></div>
+                <div class="leader-intro">
+                    <div class="leader-title">彭建初</div>
+                    <div class="leader-description">
+                        <p><strong>职务：</strong>院长助理</p>
+                        <p><strong>分管：</strong>场馆中心</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer></footer>
+<script>
+    async function fetchAndInsertContent(selector, url) {
+        const response = await fetch(url);
+        const content = await response.text();
+        document.querySelector(selector).innerHTML = content;
+    }
+    (async function () {
+        await fetchAndInsertContent('header', '../header.html');
+        await fetchAndInsertContent('nav', '../nav.html');
+        await fetchAndInsertContent('footer', '../footer.html');
+        navfunction();
+    })();
+    window.onload = function () {
+        calculateContentHeight();
+        let textContent = document.querySelector('.text-content').textContent.replace(/\s/g, '');
+        // 定义存储 side-block 对应的id和文字内容的对象
+        const sideBlocks = {
+            intro: '学院介绍',
+            leadership: '现任领导',
+            structure: '组织机构',
+            history: '历史沿革'
+        };
+        // 循环遍历对象，匹配文字内容并修改样式
+        for (const id in sideBlocks) {
+            if (textContent.includes(sideBlocks[id])) {
+                document.getElementById(id).style.backgroundColor = '#9A2F2F';
+                document.getElementById(id + '-a').style.color = '#FFFFFF';
+            }
+        }
+    };
+</script>
 </body>
 </html>
