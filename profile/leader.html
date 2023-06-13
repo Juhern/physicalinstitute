@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:background="http://www.w3.org/1999/xhtml">
-<head>
+ <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"
     />
-    <title>历史沿革</title>
+    <title>现任领导</title>
     <link rel="stylesheet" href="../css/main.css"/>
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/content_leader.css">
     <script type="text/javascript" src="../js/jquery-3.6.4.js"></script>
     <script type="text/javascript" src="../js/stylefunc.js"></script>
-</head>
-<body>
-<div class="root">
-    <header></header>
-    <nav></nav>
-    <!-- 背景图 -->
-    <div id="container">
-        <!--  图片展示-->
-        <img src="../images/background.png" alt="背景图" class="img">
-        <div class="block">
-            <div class="text-title">
-                学院概况
-            </div>
-            <div class="text-line1"></div>
-            <div class="text-line2"></div>
-            <div class="text-content">
-                <a href="../index/index.html" class="link">首页</a>/
-                <a href="../module/index.html" class="link">学院概况</a>/
-                <a href="../module/leader.html" class="link">历史沿革</a>
-            </div>
-        </div>
+ </head>
+ <body>
+    <div class="root">
+      <header></header>
+      <nav></nav>
+      <!-- 背景图 -->
+      <div id="container">
+          <!--  图片展示-->
+          <img src="../images/background.png" alt="背景图" class="img">
+          <div class="block">
+              <div class="text-title">
+                 学院概况
+              </div>
+              <div class="text-line1"></div>
+              <div class="text-line2"></div>
+              <div class="text-content">
+                 <a href="../index/index.html" class="link">首页</a>/
+                 <a href="../profile/index.html" class="link">学院概况</a>/
+                 <a href="../profile/leader.html" class="link">现任领导</a>
+              </div>
+          </div>
+      </div>
     </div>
-</div>
 
-<!-- 主体内容 -->
-<div id="content">
-    <div class="content-inner">
+    <!-- 主体内容 -->
+    <div id="content">
+      <div class="content-inner">
         <div class="side-nav">
             <div class="side-title">
                 学院概况
             </div>
             <div class="side-line"></div>
-            <div class="side-block" id="intro"><a id="intro-a" href="../module/index.html">学院介绍</a></div>
-            <div class="side-block" id="leadership"><a id="leadership-a" href="../module/leader.html">现任领导</a></div>
-            <div class="side-block" id="structure"><a id="structure-a" href="../module/institute.html">组织机构</a></div>
-            <div class="side-block" id="history"><a id="history-a" href="../module/history.html">历史沿革</a></div>
+            <div class="side-block" id="intro"><a id="intro-a" href="../profile/index.html">学院介绍</a></div>
+            <div class="side-block" id="leadership"><a id="leadership-a" href="../profile/leader.html">现任领导</a></div>
+            <div class="side-block" id="structure"><a id="structure-a" href="../profile/institute.html">组织机构</a></div>
+            <div class="side-block" id="history"><a id="history-a" href="../profile/history.html">历史沿革</a></div>
         </div>
-    </div>
+      </div>
 
-    <div class="body-page">
-        <div class="body-title">历史沿革</div>
+      <div class="body-page">
+        <div class="body-title">现任领导</div>
         <div class="body-line"></div>
         <div class="body-content">
             <div class="leader-block">
@@ -128,22 +129,22 @@
                 </div>
             </div>
         </div>
+      </div>
     </div>
-</div>
-<footer></footer>
-<script>
-    async function fetchAndInsertContent(selector, url) {
+    <footer></footer>
+    <script>
+        async function fetchAndInsertContent(selector, url) {
         const response = await fetch(url);
         const content = await response.text();
         document.querySelector(selector).innerHTML = content;
-    }
-    (async function () {
-        await fetchAndInsertContent('header', '../basic_framework/header.html');
-        await fetchAndInsertContent('nav', '../basic_framework/nav.html');
-        await fetchAndInsertContent('footer','../basic_framework/footer.html');
+        }
+        (async function () {
+            await fetchAndInsertContent('header', '../basic_framework/header.html');
+            await fetchAndInsertContent('nav', '../basic_framework/nav.html');
+            await fetchAndInsertContent('footer','../basic_framework/footer.html');
         navfunction();
-    })();
-    window.onload = function () {
+        })();
+        window.onload = function () {
         calculateContentHeight();
         let textContent = document.querySelector('.text-content').textContent.replace(/\s/g, '');
         // 定义存储 side-block 对应的id和文字内容的对象
@@ -159,8 +160,8 @@
                 document.getElementById(id).style.backgroundColor = '#9A2F2F';
                 document.getElementById(id + '-a').style.color = '#FFFFFF';
             }
-        }
-    };
-</script>
-</body>
+           }
+        };
+    </script>
+   </body>
 </html>
