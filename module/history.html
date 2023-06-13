@@ -138,9 +138,9 @@
         document.querySelector(selector).innerHTML = content;
     }
     (async function () {
-        await fetchAndInsertContent('header', '../header.html');
-        await fetchAndInsertContent('nav', '../nav.html');
-        await fetchAndInsertContent('footer', '../footer.html');
+        await fetchAndInsertContent('header', '../basic_framework/header.html');
+        await fetchAndInsertContent('nav', '../basic_framework/nav.html');
+        await fetchAndInsertContent('footer','../basic_framework/footer.html');
         navfunction();
     })();
     window.onload = function () {
